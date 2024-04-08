@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Personal Portfolio</title>
+    <style>
+        
+    
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .navbar {
+            background-color: #333;
+            overflow: hidden;
+            z-index: 1000;
+        }
+        
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .navbar a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        .dropdown .dropbtn {
+            font-size: 16px;    
+            border: none;
+            outline: none;
+            color: white;
+            padding: 14px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            margin: 0;
+        }
+        .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #ddd;
+            color: black;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        .navbar input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+        }
+
+        .education-banner h1 {
+        /* This sets a minimum font size of 24px, maximum of 48px, and a preferred size of 5vw */
+        font-size: clamp(24px, 5vw, 48px);
+        margin: 0;
+        padding-right: 20px; /* Or as needed for your design */
+        text-align: right; /* Align text to the right */
+        color: white; /* Assuming you want white text for the dark background */
+        /* Other styles as needed */
+    }
+        
+        .education-banner {
+            background: url('form.webp') no-repeat center center;
+            background-size: cover;
+            height: 400px; /* Adjust height as needed */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+
+        .contact-section {
+            background-color:#333;; /* Dark background for contrast */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .contact-section i {
+            color: white;
+            padding: 40px;
+            font-size: 30px; /* Size of the icons */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .contact-section i:hover {
+            transform: translateY(-5px);
+        }
+
+        .contact-text {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .experience-section {
+    background-color: #090936; /* Dark background color */
+    color: #ffffff; /* White text color for readability */
+    padding: 20px;
+    max-width: 100%; /* Adjust width as needed */
+    margin: auto; /* Center the section on the page */
+}
+
+.experience-section h3, 
+.experience-section p {
+    margin: 5px 0; /* Provide some space between text lines */
+}
+
+.experience-section ul {
+    list-style-type: square; /* Square bullet points */
+    padding-left: 20px; /* Space before bullet points */
+}
+
+.experience-section ul li {
+    padding: 3px 0; /* Space between bullet points */
+}
+
+    </style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href=index.html>Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Work Experience 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href=capgemini.html> capgemini</a>
+      <a href=woodino.html>Woodino</a>
+      <a href="#experience3">Experience 3</a>
+    </div>
+  </div> 
+  <a href=education.html>Education</a>
+  <div class="dropdown">
+    <button class="dropbtn">Projects 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href=capgemini.html>Automatic Form Filling Using LLM Models</a>
+      <a href=Preliminary.html>Preliminary Analysis of Datasets</a>
+      <a href=dataAnalysis.html>Analysis of Grocery Shopping Data to Estimate IMD</a>
+      <a href=chatbot.html>AI Chatbot</a>
+      <a href=airquality.html>Air Quality Prediction and Indexing with Multisensor ML</a>
+    </div>
+  </div>
+  <a href="#certifications">Certifications</a>
+  <a href=skills.html>Skills</a>
+  <a href=contact.html>Contact</a>
+  <input type="text" placeholder="Search..">
+</div>
+
+<div class="education-banner">
+   
+</div>
+<div class="additional-content" style="padding: 5px 0; text-align: center;">
+    <div style="height: 1px; background-color: #ccc; margin: 0 auto; width: 80%;"></div>
+</div>
+<div class="experience-section">
+    <h3>Project Name: Preliminary Analysis of Datasets using GPT and Python Language</Form></h3>
+    <ul>
+        <li>Developed an automated system using AI to process and analyze large datasets. The system reads CSV files, extracts relevant questions, and utilizes AI agents to generate corresponding answers.  This tool is particularly beneficial in educational and administrative contexts, enabling efficient analysis and summarization of student feedback, academic performance data, and research materials, thus enhancing decision-making and streamlining research processes.</li>       
+        <li>Integrated the GPT4 model with Python Language to enhance data analysis capabilities.</li>
+        <li>Employed Programming Language and various AI models, including local models like Llama2 and Mistral, for data analysis. </li>
+        <li>Designed algorithms for efficient data processing and visualization.</li>
+        <li>Achieved high accuracy rates in automated form filling: 90% for Word and Excel forms, 44% for PDF forms.</li>
+        <li>Significantly reduced time and effort for form processing, enhancing efficiency.</li>
+    </ul>
+</div>
+
+<div class="additional-content" style="padding: 5px 0; text-align: center;">
+    <div style="height: 1px; background-color: #ccc; margin: 0 auto; width: 80%;"></div>
+</div>
+<div class="contact-section">
+    <div class="contact-text">Get in touch</div>
+    <a href="https://www.linkedin.com/in/mohammad-hammad-427a36148/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/hammadgaur/Large-Language-Models-code" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+</div>
+
+</body>
+</html>
